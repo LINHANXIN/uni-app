@@ -1,0 +1,123 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"navigationBarBackgroundColor": "#4CD964",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none",
+					"scrollIndicator": "none",
+					"titleNView": {
+						"searchInput": {
+							"autoFocus": true,
+							"align": "left",
+							"borderRadius": "30rpx",
+							"placeholder": "请输入",
+							"placeholderColor": "#ccc",
+							"disabled": true,
+							"backgroundColor": "#f0f1f2"
+						},
+						"buttons": [{
+								"type": "share"
+							},
+							{
+								"fontSrc": "/static/icon/iconfont.ttf", // 指定图标文件
+								"text": "\ue689", // /u 开头，后面 e开始
+								"fontSize": "23", // 按钮大小
+								"background": "rgba(0,0,0,0)",
+								"float": "left"
+							}
+						]
+					}
+
+				}
+			}
+		}
+
+		, {
+			"path": "pages/article/article",
+			"style": {
+				"navigationBarTitleText": "阅读"
+			}
+		}, {
+			"path": "pages/question/question",
+			"style": {
+				"navigationBarTitleText": "问答"
+			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	    ,{
+            "path" : "pages/auth/login",
+            "style" : {
+				"navigationBarTitleText":"登录页面"
+			}
+        }
+    ],
+	"tabBar": {
+		"borderStyle":"white",
+		"color": "#b0abb3", // 未选中字体颜色
+		"selectedColor":"#345dc2", // 选中字体颜色
+		"backgroundColor":"#F8F8F8", // 背景色
+		"fontSize":"11px", //字体大小
+		"height": "52px", //标签栏高度
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/tab/index.png",
+				"selectedIconPath": "/static/tab/index-active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"iconPath": "/static/tab/category.png",
+				"selectedIconPath": "/static/tab/category-active.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/article/article",
+				"iconPath": "/static/tab/article.png",
+				"selectedIconPath": "/static/tab/article-active.png",
+				"text": "阅读"
+			},
+			{
+				"pagePath": "pages/question/question",
+				"iconPath": "/static/tab/question.png",
+				"selectedIconPath": "/static/tab/question-active.png",
+				"text": "问答"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "/static/tab/my.png",
+				"selectedIconPath": "/static/tab/my-active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		// 上拉下拉回弹背景色（ios和真机微小程序）
+		"backgroundColor": "#e42863",
+		// 下拉顶部回弹背景色（ios和真机微小程序）
+		"backgroundColorTop": "#000",
+		// 上拉底部回弹背景色（ios和真机微小程序）
+		"backgroundColorBottom": "#345DC2"
+		// "enablePullDownRefresh":true,
+		// "onReachBottomDistance":0,
+		// "backgroundTextStyle":"light"
+
+	}
+}

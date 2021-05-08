@@ -1,0 +1,1 @@
+<view class="content"><button type="default" data-event-opts="{{[['tap',[['navTo',['$event']]]]]}}" bindtap="__e">跳转到登录</button><view class="iconfont"></view><view class="iconfont icon-star"></view><view class="mxg-icon mxg-icon-list-color"></view><block wx:for="{{50}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view>{{item}}</view></block></view>
