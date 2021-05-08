@@ -4,6 +4,15 @@
 		<view class="iconfont">&#xe8e9;</view>
 		<view class="iconfont icon-star"></view>
 		<view class="mxg-icon mxg-icon-list-color"></view>
+		<view>组件跳转</view>
+		<navigator :url="'/pages/auth/login?params='+encodeURIComponent(JSON.stringify({id:1,name:'meng'}))">
+
+
+			跳转到登录页
+		</navigator>
+		<navigator url="/pages/category/category" open-type="switchTab">
+			跳转到分类页
+		</navigator>
 		<view v-for="(item,index) in 50" :key="index">{{item}}</view>
 	</view>
 </template>
@@ -35,7 +44,7 @@
 					url: `/pages/auth/login?params=${encodeURIComponent(JSON.stringify(params))}`,
 					animationDuration: 1000,
 					animationType: 'slide-in-bottom',
-			
+
 				})
 			}
 		}
