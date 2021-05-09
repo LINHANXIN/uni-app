@@ -5,7 +5,8 @@
     "pages/article/article",
     "pages/question/question",
     "pages/my/my",
-    "pages/auth/login"
+    "pages/auth/login",
+    "pages/order/order"
   ],
   "subPackages": [],
   "window": {
@@ -56,5 +57,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }
