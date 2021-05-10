@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<button type="default" @click="navTo">跳转到登录1</button>
+		<button type="default" @click="navTo">跳转到登录11</button>
 		<view class="iconfont">&#xe8e9;</view>
 		<view class="iconfont icon-star"></view>
 		<view class="mxg-icon mxg-icon-list-color"></view>
