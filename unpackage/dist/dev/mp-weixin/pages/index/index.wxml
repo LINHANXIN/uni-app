@@ -1,1 +1,1 @@
-<view class="content"><button type="default" data-event-opts="{{[['tap',[['navTo',['$event']]]]]}}" bindtap="__e">跳转到登录1</button><view class="iconfont"></view><view class="iconfont icon-star"></view><view class="mxg-icon mxg-icon-list-color"></view><view>组件跳转</view><navigator url="{{'/pages/auth/login?params='+$root.m0}}">跳转到登录页</navigator><navigator url="/pages/category/category" open-type="switchTab">跳转到分类页</navigator><block wx:for="{{50}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view>{{item}}</view></block></view>
+<view></view>

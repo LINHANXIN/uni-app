@@ -1,1 +1,1 @@
-<view><block wx:for="{{100}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view>{{item}}</view></block></view>
+<view></view>

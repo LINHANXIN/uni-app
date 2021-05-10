@@ -7626,7 +7626,7 @@ module.exports = g;
 /***/ }),
 /* 4 */
 /*!**********************************!*\
-  !*** G:/学习资料/uni-app/pages.json ***!
+  !*** G:/测试项目/uni-app/pages.json ***!
   \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
