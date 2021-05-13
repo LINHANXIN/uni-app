@@ -1,6 +1,6 @@
 <template>
 	<view>
-
+		<text class="iconfont icon-star"></text>
 	</view>
 
 </template>
