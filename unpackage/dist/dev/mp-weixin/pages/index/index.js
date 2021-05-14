@@ -133,20 +133,58 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var searchInput = function searchInput() {__webpack_require__.e(/*! require.ensure | components/common/search-input */ "components/common/search-input").then((function () {return resolve(__webpack_require__(/*! @/components/common/search-input.vue */ 42));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    searchInput: searchInput },
+
   data: function data() {
     return {};
 
 
-  } };exports.default = _default;
+  },
+  onLoad: function onLoad() {
+
+
+
+  },
+  methods: {
+    // 搜索框滚动数据
+    placeholderData: function placeholderData() {
+      //获取当前页面实例, 仅 App 支持写在APP-PLUS条件编译下
+      var webview = this.$scope.$getAppWebview();
+
+      var arr = ['APP · 微信小程序', 'Java · SprinBoot', 'SpringCloud ·SpringSecurity', 'Vue · React'];
+      var i = 0;
+      webview.setStyle({
+        'titleNView': {
+          "searchInput": {
+            "placeholder": arr[i] } } });
+
+
+
+      setInterval(function () {
+        // 定时循环显示每个元素，3最后一个元素，又从0第1个元素开始
+        i = i < 3 ? ++i : 0;
+        webview.setStyle({
+          'titleNView': {
+            "searchInput": {
+              "placeholder": arr[i] } } });
+
+
+
+      }, 3000); // ()
+    } } };exports.default = _default;
 
 /***/ })
 ],[[11,"common/runtime","common/vendor"]]]);

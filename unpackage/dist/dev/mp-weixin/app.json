@@ -4,18 +4,13 @@
     "pages/category/category",
     "pages/article/article",
     "pages/question/question",
-    "pages/my/my",
-    "pages/auth/login",
-    "pages/order/order"
+    "pages/my/my"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#e42863",
-    "backgroundColorTop": "#000",
-    "backgroundColorBottom": "#345DC2"
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#333333"
   },
   "tabBar": {
     "borderStyle": "white",
@@ -27,36 +22,36 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "/static/tab/index.png",
-        "selectedIconPath": "/static/tab/index-active.png",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "static/tab/index.png",
+        "selectedIconPath": "static/tab/index-active.png"
       },
       {
         "pagePath": "pages/category/category",
-        "iconPath": "/static/tab/category.png",
-        "selectedIconPath": "/static/tab/category-active.png",
-        "text": "分类"
+        "text": "分类",
+        "iconPath": "static/tab/category.png",
+        "selectedIconPath": "static/tab/category-active.png"
       },
       {
         "pagePath": "pages/article/article",
-        "iconPath": "/static/tab/article.png",
-        "selectedIconPath": "/static/tab/article-active.png",
-        "text": "阅读"
+        "text": "阅读",
+        "iconPath": "static/tab/article.png",
+        "selectedIconPath": "static/tab/article-active.png"
       },
       {
         "pagePath": "pages/question/question",
-        "iconPath": "/static/tab/question.png",
-        "selectedIconPath": "/static/tab/question-active.png",
-        "text": "问答"
+        "text": "问答",
+        "iconPath": "static/tab/question.png",
+        "selectedIconPath": "static/tab/question-active.png"
       },
       {
         "pagePath": "pages/my/my",
-        "iconPath": "/static/tab/my.png",
-        "selectedIconPath": "/static/tab/my-active.png",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "static/tab/my.png",
+        "selectedIconPath": "static/tab/my-active.png"
       }
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap85.json"
+  "sitemapLocation": "sitemap87.json"
 }
